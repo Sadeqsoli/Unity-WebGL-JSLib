@@ -37,6 +37,19 @@ public class ExampleUnityScript : MonoBehaviour
     }
 }
 ```
+## Unity Editor Extensions
+
+This repository includes custom Unity editor extensions to facilitate the creation and management of JavaScript libraries for WebGL builds.
+
+### Creating a JavaScript Library Template
+
+You can create a new `.jslib` file with a template by following these steps:
+
+1. In the Unity Editor, right-click in the `Project` window.
+2. Select `Create` > `JS Script-Template`.
+
+This will create a new `.jslib` file with a basic template to get you started.
+
 ## Contributing
 Feel free to open issues or submit pull requests.
 
