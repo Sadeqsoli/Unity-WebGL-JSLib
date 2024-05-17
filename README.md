@@ -23,3 +23,22 @@ Clone this repository and integrate the scripts into your Unity project.
 function UnityCallExample() {
     SendMessage('GameObjectName', 'MethodName', 'Message from JavaScript');
 }
+```
+### Unity C# Example
+```csharp
+// ExampleUnityScript.cs
+using UnityEngine;
+
+public class ExampleUnityScript : MonoBehaviour
+{
+    void MethodName(string message)
+    {
+        Debug.Log("Message from JavaScript: " + message);
+    }
+}
+```
+## Contributing
+Feel free to open issues or submit pull requests.
+
+## License
+This project is licensed under the MIT License.
