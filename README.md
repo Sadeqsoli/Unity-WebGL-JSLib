@@ -72,7 +72,7 @@ This repository includes a plugin to check if the current device is an iOS devic
 
 ### Audio Stream (Microphone Permission)
 
-This repository includes a plugin to find an array of microphones .
+This repository includes a plugin to find an array of microphones, and alows for local streaming after getting mic permission in unity webGL.
 ## Unity Editor Extensions
 
 This repository includes custom Unity editor extensions to facilitate the creation and management of JavaScript libraries for WebGL builds.
