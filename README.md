@@ -37,6 +37,42 @@ public class ExampleUnityScript : MonoBehaviour
     }
 }
 ```
+
+
+### Image Downloader
+
+This repository includes a helper for downloading images in WebGL builds.
+The JavaScript library (`ImageDownloaderPlugin.jslib`) includes a function to download images
+
+#### Unity C# Example
+```csharp
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using sleeplessDev;
+
+public class WebGLImageDownloadExample : MonoBehaviour
+{
+	public DownloadingImage imageDownloader;
+
+	void Start()
+	{
+		string imageUrl = "https://example.com/path/to/your/image.jpg"; // Replace with the actual URL of the image
+		string fileName = "downloadedImage.jpg";
+
+		imageDownloader = gameObject.AddComponent<DownloadingImage>();
+		imageDownloader.DownloadImage(imageUrl, fileName);
+	}
+}
+
+```
+### iOS Checker
+
+This repository includes a plugin to check if the current device is an iOS device. The plugin utilizes JavaScript to perform the check and provides a C# interface for easy usage within Unity.
+
+### Audio Stream (Microphone Permission)
+
+This repository includes a plugin to find an array of microphones .
 ## Unity Editor Extensions
 
 This repository includes custom Unity editor extensions to facilitate the creation and management of JavaScript libraries for WebGL builds.
